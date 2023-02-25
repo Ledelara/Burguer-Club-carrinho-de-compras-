@@ -1,0 +1,124 @@
+:root {
+    --font-family: "DM Sans";
+    --font-size: 18px;
+    --red: #DC0000;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    background-color: var(--white);
+}
+
+.header {
+    background-color: var(--red);
+    padding: 1.5em 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo {
+    color: var(--white);
+    font-size: 25px;
+    font-weight: 700;
+    padding-left: 2em;
+}
+
+.carrinho {
+    text-align: center;
+    padding-right: 2em;
+}
+
+.carrinho-link {
+    text-decoration: underline;
+    color: var(--black);
+}
+
+.mais-vendidos, .menu-completo, .bebidas {
+    padding: 2em 2em;
+}
+
+.mercadoria {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between
+}
+
+.mais-vendidos__titulo, .menu-completo__titulo, .bebidas__titulo{
+    font-size: 20px;
+    border-bottom: 2px solid var(--black);
+}
+
+.imagem-mercadoria {
+    height: 130px;
+    width: 130px;
+    border-radius: 10px;
+}
+
+.descricao {
+    text-transform: uppercase;
+}
+
+.descricao, .preco {
+    padding: 1em 0;
+}
+
+.botao-comprar {
+    border-radius: 10px;
+    background: var(--red);
+    border: var(--red);
+    color: var(--white);
+    padding: 0.5em;
+    cursor: pointer;
+    margin: 1em 0;
+    text-align: center;
+}
+
+.botao-carrinho {
+    padding: 2em 0;
+}
+
+#itens {
+    padding: 1em 2em;
+}
+
+.total-container {
+    padding: 0 2em;
+}
+
+.total {
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.botao-limpar {
+    background-color: var(--red);
+    border: none;
+    border-radius: 10px;
+    color: var(--white);
+    margin: 1em 2em;
+    padding: 1em;
+    cursor: pointer;
+}
+
+.footer-container {
+    background-color: var(--red);
+    padding: 2em;
+}
+
+.footer-texto {
+    text-align: center;
+    color: var(--white);
+    font-size: 25px;
+    font-weight: 700;
+}
+

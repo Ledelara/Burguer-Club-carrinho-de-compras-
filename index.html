@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrinho de compras - Burguer Club</title>
+    <link rel="stylesheet" href= "reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+
+  <body>
+
+    <header class="header">
+        <div class="header-container">
+            <h1 class="header-logo">Burguer Club</h1>
+            <p class="carrinho"><a class="carrinho-link" href="carrinho.html"> Ver Carrinho de compras </a></p>
+        </div>
+    </header>
+
+    <main>
+        <section class="mais-vendidos">
+            <h2 class="mais-vendidos__titulo">Mais vendidos</h2>
+            <div class="container">
+                <div class="mercadoria">
+                    <p class="descricao">Texas Burguer</p>
+                    <img class="imagem-mercadoria" src="img/hamburguer.jpg">
+                    <p class="preco">R$ 19,99</p>
+                    qtd: <input type="number" value="1" min="1" max="10" id="qtd1">
+                    <button class="botao-comprar" type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Texas Burguer', document.getElementById('qtd1').value, '19.99', 1)"> Adicionar ao carrinho </button>
+                </div>
+    
+                <div class="mercadoria">
+                    <p class="descricao">Double Club</p>
+                    <img class="imagem-mercadoria" src="img/hamburguer-2.jpg">
+                    <p class="preco">R$ 20,99</p>
+                    qtd: <input type="number" value="1" min="1" max="10" id="qtd2">
+                    <button class="botao-comprar" type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Double Burguer', document.getElementById('qtd2').value, '20.99', 2)"> Adicionar ao carrinho </button>
+                </div>
+
+                <div class="mercadoria">
+                    <p class="descricao">Triplo Cheddar Bacon</p>
+                    <img class="imagem-mercadoria" src="img/hamburguer-3.jpg">
+                    <p class="preco">R$ 24,99</p>
+                    qtd: <input type="number" value="1" min="1" max="10" id="qtd3">
+                    <button class="botao-comprar" type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Triplo Cheddar Bacon', document.getElementById('qtd3').value, '24.99', 3)"> Adicionar ao carrinho </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-completo">
+            <h2 class="menu-completo__titulo">Menu</h2>
+            <div class="container">
+                <div class="mercadoria">
+                    <p class="descricao">Classic Burguer</p>
+                    <img class="imagem-mercadoria" src="img/hamburguer-4.jpg">
+                    <p class="preco">R$ 24,99</p>
+                    qtd: <input type="number" value="1" min="1" max="10" id="qtd4">
+                    <button class="botao-comprar" type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Classic Burguer', document.getElementById('qtd4').value, '24.99', 4)"> Adicionar ao carrinho </button>
+                </div>
+
+                <div class="mercadoria">
+                    <p class="descricao">New York</p>
+                    <img class="imagem-mercadoria" src="img/hamburguer-5.jpeg">
+                    <p class="preco">R$ 38,00</p>
+                    qtd: <input type="number" value="1" min="1" max="10" id="qtd5">
+                    <button class="botao-comprar" type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('New York', document.getElementById('qtd5').value, '38.00', 5)"> Adicionar ao carrinho </button>
+                </div>
+
+                <div class="mercadoria">
+                    <p class="descricao">Barbie Paradise</p>
+                    <img class="imagem-mercadoria" src="img/hamburguer-6.jpg">
+                    <p class="preco">R$ 30,99</p>
+                    qtd: <input type="number" value="1" min="1" max="10" id="qtd6">
+                    <button class="botao-comprar" type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Barbie Paradise', document.getElementById('qtd6').value, '30.99', 6)"> Adicionar ao carrinho </button>
+                </div>
+
+                <div class="mercadoria">
+                    <p class="descricao">Dark Sun</p>
+                    <img class="imagem-mercadoria" src="img/hamburguer-7.jpg">
+                    <p class="preco">R$ 39,99</p>
+                    qtd: <input type="number" value="1" min="1" max="10" id="qtd7">
+                    <button class="botao-comprar" type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Dark Sun', document.getElementById('qtd7').value, '39.99', 7)"> Adicionar ao carrinho </button>
+                </div>
+
+                <div class="mercadoria">
+                    <p class="descricao">Flipper</p>
+                    <img class="imagem-mercadoria" src="img/hamburguer-8.jpg">
+                    <p class="preco">R$ 39,99</p>
+                    qtd: <input type="number" value="1" min="1" max="10" id="qtd8">
+                    <button class="botao-comprar" type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Flipper', document.getElementById('qtd8').value, '39.99', 8)"> Adicionar ao carrinho </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="bebidas">
+            <h3 class="bebidas__titulo">Bebidas</h3>
+            <div class="container">
+                <div class="mercadoria">
+                    <p class="descricao">Água mineral</p>
+                    <img class="imagem-mercadoria" src="img/agua.png">
+                    <p class="preco">R$ 4,99</p>
+                    qtd: <input type="number" value="1" min="1" max="10" id="qtd9">
+                    <button class="botao-comprar" type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Água mineral', document.getElementById('qtd9').value, '4.99', 9)"> Adicionar ao carrinho </button>
+                </div>
+
+                <div class="mercadoria">
+                    <p class="descricao">Refrigerante</p>
+                    <img class="imagem-mercadoria" src="img/refrigerante.jpg">
+                    <p class="preco">R$ 9,99</p>
+                    qtd: <input type="number" value="1" min="1" max="10" id="qtd10">
+                    <button class="botao-comprar" type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Refrigerante', document.getElementById('qtd10').value, '9.99', 10)"> Adicionar ao carrinho </button>
+                </div>
+
+                <div class="mercadoria">
+                    <p class="descricao">Cerveja</p>
+                    <img class="imagem-mercadoria" src="img/cerveja.jpg">
+                    <p class="preco">R$ 5,99</p>
+                    qtd: <input type="number" value="1" min="1" max="10" id="qtd11">
+                    <button class="botao-comprar" type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Cerveja', document.getElementById('qtd11').value, '5.99', 11)"> Adicionar ao carrinho </button>
+                </div>
+
+                <div class="mercadoria">
+                    <p class="descricao">Vinho</p>
+                    <img class="imagem-mercadoria" src="img/vinho.png">
+                    <p class="preco">R$ 34,99</p>
+                    qtd: <input type="number" value="1" min="1" max="10" id="qtd12">
+                    <button class="botao-comprar" type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Vinho', document.getElementById('qtd12').value, '34.99', 12)"> Adicionar ao carrinho </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- <div class="botao-carrinho">
+            <p class="carrinho"><a class="carrinho-link" href="carrinho.html"> Ver Carrinho de compras </a></p>
+        </div> -->
+    </main>
+    <script src="js/AddCarrinho.js"></script>
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="footer-texto">Burguer Club © 2023</p>
+
+        </div>
+
+    </footer>
+  </body>
+</html>
+
+
+  

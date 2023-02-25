@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrinho de compras</title>
+    <link rel="stylesheet" href= "reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-container">
+          <h1 class="header-logo">Burguer Club</h1>
+      </div>
+  </header>
+
+  <main>
+    <div id="itens"></div>
+    <div class="total-container">
+      <h1 class = "total">Total:<span id="total"></span> </h1>
+    </div>
+
+    <script src="js/script.js"></script>
+
+    <button class="botao-limpar" type="button" onclick=" localStorage.clear(); location.reload();"> Limpar carrinho </button>
+  </main>
+  </body>
+</html>
